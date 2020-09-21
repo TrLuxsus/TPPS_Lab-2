@@ -14,4 +14,19 @@ public class Matrix {
     public Matrix(float[][] matrix) {
         this.setMatrix(matrix);
     }
+
+    public float sumMaxInRows() {
+        float sum = 0;
+
+        for (float[] row : matrix) {
+            float maxInRow = row[0];
+
+            for (int j = 1, rowLength = row.length; j < rowLength; j++)
+                if (row[j] > maxInRow)
+                    maxInRow = row[j];
+
+            sum += maxInRow;
+        }
+        return sum;
+    }
 }
