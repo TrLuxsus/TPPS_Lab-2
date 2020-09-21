@@ -8,7 +8,7 @@ public class FibonacciTest {
 
     @org.junit.Test
     public void firstBiggerThen() {
-        fail();
+        Assert.assertEquals(Fibonacci.firstBiggerThen(1),2,0);
     }
 
     @org.junit.Test
