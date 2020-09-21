@@ -23,4 +23,7 @@ public class Fibonacci {
         return getFibonacciNumber(limit).stream().filter(n -> n > limit).findFirst().orElse(-1);
     }
 
+    public static int sumMembersLessThen(int limit) {
+        return getFibonacciNumber(limit).stream().filter(n -> n < limit).mapToInt(Integer::intValue).sum();
+    }
 }

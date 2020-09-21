@@ -13,6 +13,6 @@ public class FibonacciTest {
 
     @org.junit.Test
     public void sumMembersLessThen() {
-        fail();
+        Assert.assertEquals(Fibonacci.sumMembersLessThen(3),4,0);
     }
 }
